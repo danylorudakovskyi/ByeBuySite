@@ -1,18 +1,17 @@
-/* Global Styles */
 a {
-    color: #333; /* Dark gray for a professional look */
-    text-decoration: none; /* Remove underline */
-    font-weight: 500; /* Slightly bold for readability */
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 a:hover {
-    color: #007bff; /* Professional blue (similar to Bootstrap's primary color) */
-    text-decoration: underline; /* Subtle underline on hover */
+    color: #007bff;
+    text-decoration: underline;
 }
 
 main {
- padding: 24px 24px;
+    padding: 24px 24px;
 }
 
 body {
@@ -31,28 +30,26 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* Space between the logo and navigation */
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #fff;
     border-bottom: 2px solid #ddd;
-    width: 90%;
 }
 
 footer {
     display: flex;
-    justify-content: center; /* Space between the logo and navigation */
+    justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #fff;
     border-top: 2px solid #ddd;
-    width: 90%;
     font-size: 90%;
 }
 
 .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 20px;
 }
 
@@ -63,10 +60,8 @@ footer {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
 }
 
-/* First Row: Logo & About Us */
 .logo-about {
     display: flex;
     align-items: center;
@@ -74,9 +69,8 @@ footer {
     text-align: left;
 }
 
-/* Adjusted Widths */
 .logo-block {
-    flex: 0 0 50%; /* Increase logo size */
+    flex: 0 0 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,30 +82,28 @@ footer {
 }
 
 .logo-block img {
-    height: 64px; /* Slightly bigger logo */
-    border-radius: 20%; /* Rounded corners similar to app store icons */
+    height: 64px;
+    border-radius: 20%;
 }
 
 .app-logo-name {
-    font-size: 2.5rem; /* Bigger app name */
+    font-size: 2.5rem;
     font-weight: bold;
     color: #222;
-    margin-top: 0; /* Adjust as needed */
-    margin-bottom: 0; /* Adjust as needed */
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-
-/* Navigation Styles */
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    display: flex; /* Display items horizontally */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    gap: 20px; /* Space out items */
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
 nav li {
-    display: inline-block; /* Make each item inline */
+    display: inline-block;
 }
 
 nav a {
@@ -122,15 +114,15 @@ nav a {
 }
 
 nav a:hover {
-    color: #007bff; /* Professional blue on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #007bff;
+    text-decoration: underline;
 }
 
-/* Contact Us & Privacy Policy */
 .contact-us-block, .privacy-policy-block, .about-us-block {
     width: 100%;
     text-align: left;
     padding: 20px 0;
+    text-align: justify;
 }
 
 .contact-us-block h1, .privacy-policy-block h1, .about-us-block h1 {
@@ -157,11 +149,13 @@ nav a:hover {
 .download-button {
     display: flex;
     justify-content: center;
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
-.download-button img{
-    width: 200px;
+.download-button img {
+    width: 40%;
+    min-width: 170px;
+    padding: 10px 0;
 }
 
 .download-button:hover {
@@ -169,10 +163,27 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+
+    .logo-block img {
+        height: 45px;
+    }
+
+    .app-logo-name {
+        font-size: 2rem;
+    }
+
+    .logo-block {
+        margin-bottom: 10px;
+    }
+
     header {
-        flex-direction: column; /* Stack header elements vertically */
+        flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 10px;
     }
 
     .logo-about {
@@ -182,22 +193,29 @@ nav a:hover {
     }
 
     .logo-block, .about-us-block {
-        flex: 0 0 100%; /* Stack logo and about us */
-        text-align: center;
+        flex: 0 0 100%;
     }
 
     .about-us-block {
         padding-left: 0;
     }
-    
-    /* App Store Button */
-    .app-store-btn img {
-        width: 160px;
+
+    .about-us-content {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    /* Navigation for small screens */
+    .about-us-app-example {
+        width: 60%;
+        max-height: none;
+    }
+
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        gap: 10px; /* Smaller gap for stacked items */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
     }
 }
