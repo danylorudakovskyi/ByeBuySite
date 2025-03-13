@@ -1,0 +1,36 @@
+# Ignore DS_Store files
+.DS_Store
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build directory
+dist/
+build/
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore compiled CSS files
+*.css.map
+
+# Ignore compiled JavaScript files
+*.js.map
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Ignore environment variables file
+.env
+
+# Ignore coverage directory
+coverage/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
